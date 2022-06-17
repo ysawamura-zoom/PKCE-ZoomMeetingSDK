@@ -11,3 +11,7 @@ PKCE MeetingSDK Android sample
 8. Now open the project on your Android Studio.
 9. Enter credentials and values which can be retrived from makretplace.zoom.us.
 *Note) REDIRECT_URL_ENCODED will be an encoded string of your redirect url.
+
+At this point tested using...
+ - zoom-sdk-android-5.10.6.6361
+ - Android Studio Chipmunk | 2021.2.1 Patch 1
