@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "msdk"
+include ':app'
+include ':mobilertc'
+include ':commonlib'
