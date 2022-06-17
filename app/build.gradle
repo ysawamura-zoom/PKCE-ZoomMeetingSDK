@@ -4,7 +4,7 @@ android {
     compileSdkVersion = 31
     buildToolsVersion = "30.0.2"
     defaultConfig {
-        applicationId "org.zapto.playground.msdk"
+        applicationId "com.sample.msdk"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
