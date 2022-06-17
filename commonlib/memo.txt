@@ -1,0 +1,1 @@
+copy build.gradle and commonlib.aar under this folder
