@@ -1,1 +1,1 @@
-copy build.gradle and mobilertc.aar
+copy build.gradle and mobilertc.aar under this folder
