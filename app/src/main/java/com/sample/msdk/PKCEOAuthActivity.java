@@ -87,7 +87,6 @@ public class PKCEOAuthActivity extends Activity implements Constants{
     public void getAccessToken(String code){
         Log.d(TAG, "getAccessToken");
         Log.d(TAG, "code_verifier: " + code_verifier);
-        //String Url = "https://zoom.us/oauth/token?code="+ code + "&grant_type=authorization_code&redirect_uri=https%3A%2F%2Fplayground.zapto.org%3A8443%2F&code_verifier=" + code_verifier;
         String Url = "https://zoom.us/oauth/token?code="+ code + "&grant_type=authorization_code&redirect_uri=" + REDIRECT_URL_ENCODED + "&code_verifier=" + code_verifier;
 
         String clientid = CLIENT_ID;
@@ -191,7 +190,6 @@ public class PKCEOAuthActivity extends Activity implements Constants{
         code_challenge = createCodeChallenge();
         Log.d(TAG, "code_challenge: " + code_challenge);
         String uriString = ADD_URL;
-        //String uriString = "https://zoom.us/oauth/authorize?response_type=code&client_id=sqDfa1ScSRqMJAvYyeZmkQ&redirect_uri=https%3A%2F%2Fplayground.zapto.org%3A8443%2Fzoom%2Fsdkoauth%2F";
         Uri uri = Uri.parse(uriString)
                 .buildUpon()
                 .appendQueryParameter("code_challenge", code_challenge)
