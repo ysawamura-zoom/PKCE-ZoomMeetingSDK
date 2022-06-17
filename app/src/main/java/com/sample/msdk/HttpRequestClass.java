@@ -64,22 +64,6 @@ public class HttpRequestClass extends AsyncTask<String, Void, String> {
             if(responseCode == HttpURLConnection.HTTP_OK){
                 server_response = readStream(urlConnection.getInputStream());
                 Log.d(TAG, "server_response: " + server_response);
-                /*
-                try {
-                    JSONObject jsonObject = new JSONObject(server_response);
-                    System.out.println("JSON Object: " + jsonObject);
-                    String access_token = jsonObject.getString("access_token");
-                    String refresh_token = jsonObject.getString("refresh_token");
-                    Log.d(TAG, "access_token: " + access_token);
-                    Log.d(TAG, "refresh_token: " + refresh_token);
-                    SharedPreferences.Editor editor = pref.edit();
-                    editor.putString("access_token", access_token);
-                    editor.putString("refresh_token", refresh_token);
-                    editor.commit();
-                } catch (JSONException e) {
-                    System.out.println("Error " + e.toString());
-                }
-                */
             }
         } catch (IOException e) {
             Log.d(TAG, "download error");
