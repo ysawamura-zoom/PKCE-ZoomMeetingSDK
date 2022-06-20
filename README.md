@@ -10,7 +10,9 @@ PKCE MeetingSDK Android sample
 7. Copy "build.gradle" and "mobilertc.aar" from step "4." under mobilertc folder.
 8. Now open the project on your Android Studio.
 9. Enter credentials and values which can be retrived from makretplace.zoom.us.
+
 *Note) REDIRECT_URL_ENCODED will be an encoded string of your redirect url.
+
 *Note) You will need to add two scopes on your marketplace entry.
  - User > View your user information
  - User > View user's zak token
